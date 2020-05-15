@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fi">
+	<head>
+		<title>Vierailemani maat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="tyyli.css">
+	</head>
+	<!-- Tämä teksti ei näy verkkosivulla -->
+	<body>
+		<div class="jumbotron"> 
+			<h1 id="banneri">Kian matkassa</h1> 
+		</div> 
+		<nav class="navbar navbar-expand-sm justify-content-center">
+			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				 <span class="navbar-toggler-icon"></span>
+			</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Aloitus</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="second.html" id="navbardrop" data-hover="dropdown">Matkakohteet</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item current" href="second-countries.html">Vierailemani maat</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="third.html">Minusta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://herpackinglist.com/" target="_blank">Pakkauslistoja ja -vinkkejä</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://um.fi/matkustustiedotteet-a-o" target="_blank">Ulkoministeriön matkailutiedotteet</a>
+						</li>
+					</ul>
+				</div>
+		</nav>
+		<!-- Tästä alkaa koodi kartasta, johon on merkitty maat, joissa olen käynyt -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+					<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+					<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+					<div id="mapdiv" style="width: responsive; height: 450px;"></div>
+					<!--<div style="width: 1000px; font-size: 70%; padding: 5px 0; text-align: center; background-color: #F7F7FF; margin-top: 1px; color: #FFC0CB;"><a href="https://www.amcharts.com/visited_countries/" style="color: #FFC0CB;">Create your own visited countries map</a> or check out the <a href="https://www.amcharts.com/" style="color: #FFC0CB;">JavaScript Charts</a>.</div>-->
+					<script type="text/javascript">
+					var map = AmCharts.makeChart("mapdiv",{
+					type: "map",
+					theme: "dark",
+					projection: "mercator",
+					panEventsEnabled : true,
+					backgroundColor : "#F7F7FF",
+					backgroundAlpha : 1,
+					zoomControl: {
+					zoomControlEnabled : true
+					},
+					dataProvider : {
+					map : "worldHigh",
+					getAreasFromMap : true,
+					areas :
+					[
+						{
+							"id": "AX",
+							"showAsSelected": true
+						},
+						{
+							"id": "AD",
+							"showAsSelected": true
+						},
+						{
+							"id": "AT",
+							"showAsSelected": true
+						},
+						{
+							"id": "DK",
+							"showAsSelected": true
+						},
+						{
+							"id": "EE",
+							"showAsSelected": true
+						},
+						{
+							"id": "FI",
+							"showAsSelected": true
+						},
+						{
+							"id": "FR",
+							"showAsSelected": true
+						},
+						{
+							"id": "DE",
+							"showAsSelected": true
+						},
+						{
+							"id": "GI",
+							"showAsSelected": true
+						},
+						{
+							"id": "IT",
+							"showAsSelected": true
+						},
+						{
+							"id": "JE",
+							"showAsSelected": true
+						},
+						{
+							"id": "LI",
+							"showAsSelected": true
+						},
+						{
+							"id": "MC",
+							"showAsSelected": true
+						},
+						{
+							"id": "NL",
+							"showAsSelected": true
+						},
+						{
+							"id": "NO",
+							"showAsSelected": true
+						},
+						{
+							"id": "PT",
+							"showAsSelected": true
+						},
+						{
+							"id": "SM",
+							"showAsSelected": true
+						},
+						{
+							"id": "ES",
+							"showAsSelected": true
+						},
+						{
+							"id": "SE",
+							"showAsSelected": true
+						},
+						{
+							"id": "CH",
+							"showAsSelected": true
+						},
+						{
+							"id": "GB",
+							"showAsSelected": true
+						},
+						{
+							"id": "VA",
+							"showAsSelected": true
+						},
+						{
+							"id": "CA",
+							"showAsSelected": true
+						},
+						{
+							"id": "US",
+							"showAsSelected": true
+						}
+					]
+					},
+					areasSettings : {
+					autoZoom : true,
+					color : "#FFC0CB",
+					colorSolid : "#DC143C",
+					selectedColor : "#DC143C",
+					outlineColor : "#666666",
+					rollOverColor : "#CD5C5C",
+					rollOverOutlineColor : "#000000"
+					}
+					});
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Vierailemani maat:</h3>
+					<ul> 
+						<li>Alankomaat</li>
+						<li>Andorra</li>
+						<li>Espanja</li>
+						<li>Iso-Britannia</li>
+						<li>Italia</li>
+						<li>Itävalta</li>
+						<li>Kanada</li>
+						<li>Liechtenstein</li>
+						<li>Monaco</li>
+						<li>Norja</li>
+						<li>Portugali</li>
+						<li>Ranska</li>
+						<li>Ruotsi</li>
+						<li>Saksa</li>
+						<li>San Marino</li>
+						<li>Sveitsi</li>
+						<li>Tanska</li>
+						<li>Vatikaanivaltio</li>
+						<li>Viro</li>
+						<li>Yhdysvallat</li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<h3>Itsehallinnolliset alueet, joilla olen käynyt:</h3>
+					<ul>
+						<li>Ahvenanmaa</li>
+						<li>Gibraltar</li>
+						<li>Jersey</li>
+					</ul>
+					<img class="img-fluid" src="https://storage.needpix.com/rsynced_images/globe-3593560_1280.jpg" alt="Vanhanaikainen karttapallo" width="500">
+				</div>
+			</div>
+		</div>
+
+		<footer> 
+			<p>@ Kia Ekström 2020 Yhteystiedot: <a href="mailto:Kia.Ekstrom@student.laurea.fi">Kia.Ekstrom@student.laurea.fi</a></p>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
