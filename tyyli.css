@@ -93,7 +93,6 @@ a.current {
 	/*otsikoiden tyylit*/
 	
 h1 {
-	/*background: #FAEBD7;*/
 	color: #DC143C;
 	font-family: Verdana, Arial;
 	padding: 10px;
@@ -117,8 +116,8 @@ h3
 	background-image: url(https://p2.piqsels.com/preview/542/649/89/passport-map-world-trip.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 	}
+	
 #banneri {
 	font-size: 5vw;
 	font-style: oblique;
@@ -185,7 +184,6 @@ textarea {
 
 #mapdiv {
 	margin-bottom: 20px;
-	/*width: responsive;*/
 	height:450px;
 }
 

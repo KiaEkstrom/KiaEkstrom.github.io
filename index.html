@@ -39,13 +39,11 @@
 		</nav>
 		<h1>Kian matkassa</h1>
 		<div id="quotekaruselli" class="carousel slide" data-ride="carousel">
-			<!-- These are the little dots at the bottom of each slide (which indicates how many slides there are in the carousel, and which slide the user are currently viewing)-->
 			<ol class="carousel-indicators">
 				<li data-target="#quotekaruselli" data-slide-to="0" class="active"></li>
 				<li data-target="#quotekaruselli" data-slide-to="1"></li>
 				<li data-target="#quotekaruselli" data-slide-to="2"></li>
 			</ol>
-			<!-- slideshow -->
 			<div class="carousel-inner" role="listbox">
 				<div class="carousel-item active">
 					<q>Muuallakin on maailmaa.</q>
@@ -76,7 +74,6 @@
 					<p class="author">– St. Augustine</p>
 				</div>
 			</div>
-			<!-- left and right controls -->
 			<a class="carousel-control-prev" href="#quotekaruselli" data-slide="prev"> 
 				<span class="carousel-control-prev-icon"></span>
 			</a>
@@ -107,7 +104,7 @@
 			<form action="index.html" method="post">
 				<fieldset>
 					<legend>Jätä kommentti</legend>
-					<textarea name="nimi" rows="4" cols="80">Kirjoita tähän</textarea><br>
+					<textarea name="nimi" rows="4" cols="80" placeholder="Kirjoita tähän"></textarea><br>
 					<label for="name">Nimi</label><br>
 					<input type="text" id="name" name="name" required><br>
 					<label for="email">Sähköpostiosoite</label><br>
