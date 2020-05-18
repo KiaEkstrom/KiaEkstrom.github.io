@@ -123,6 +123,7 @@ h3
 	font-size: 70px;
 	font-style: oblique;
 	font-family: serif;
+	width: 90%;
 }
 	
 	/*index*/
@@ -207,7 +208,12 @@ dl {
 
 @media only screen and (max-width: 768px) {
 	body {
-		background-color: blue;
+		background: #FFFFFF;
+		width: 85%;
+	}
+	
+	img {
+		background: #FFFFFF;
 	}
 }
  
@@ -222,6 +228,10 @@ section {
 
 div {
 	margin-bottom: 10px;
+}
+
+img {
+	background: #FFFFF0
 }
 	
 
