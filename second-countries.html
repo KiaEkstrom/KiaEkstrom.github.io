@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="tyyli.css">
 	</head>
-	<!-- Tämä teksti ei näy verkkosivulla -->
 	<body>
 		<div class="jumbotron"> 
 			<h1 id="banneri">Kian matkassa</h1> 
@@ -44,11 +43,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
-					<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
-					<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
-					<div id="mapdiv" style="width: responsive; height: 450px;"></div>
-					<!--<div style="width: 1000px; font-size: 70%; padding: 5px 0; text-align: center; background-color: #F7F7FF; margin-top: 1px; color: #FFC0CB;"><a href="https://www.amcharts.com/visited_countries/" style="color: #FFC0CB;">Create your own visited countries map</a> or check out the <a href="https://www.amcharts.com/" style="color: #FFC0CB;">JavaScript Charts</a>.</div>-->
+					<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+					<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
+					<script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+					<div id="mapdiv"></div>
 					<script type="text/javascript">
 					var map = AmCharts.makeChart("mapdiv",{
 					type: "map",
@@ -215,11 +213,9 @@
 				</div>
 			</div>
 		</div>
-
 		<footer> 
 			<p>@ Kia Ekström 2020 Yhteystiedot: <a href="mailto:Kia.Ekstrom@student.laurea.fi">Kia.Ekstrom@student.laurea.fi</a></p>
 		</footer>
-		
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
