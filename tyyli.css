@@ -1,7 +1,7 @@
 /*dokumentin yleistyylit*/
 
 html
-	{background: #FFFFF0;
+	{background: #FFFFFF;
 		
 	}
 
@@ -10,11 +10,11 @@ html
 }
 
 head
-	{background: #FFFFF0;
+	{background: #FFFFFF;
 	font-family: Verdana, Arial;
 	}
 body
-	{background: #FFFFF0; 
+	{background: #FFFFFF; 
 	color: black;
 	font-family: Verdana, Arial;
 	width: 70%;
@@ -34,14 +34,14 @@ footer {
 	/*navigaation ja linkkien tyylit*/
 
 nav {
-	background-color: #FFFFF0;
+	background-color: #FFFFFF;
 }
 
 	
 .nav-link
 	{list-style: none;
 	color: black;
-	background-color: #FFFFF0;
+	background-color: #FFFFFF;
 	padding: 5px;
 	margin: 5px;
 	text-decoration: none;
@@ -151,7 +151,7 @@ figcaption {
 }
 
 form {
-	background-color: #FFFFF0;
+	background-color: #FFFFFF;
 	padding: 10px;
 	margin-top: 50px;
 }
@@ -204,21 +204,11 @@ dl {
 	.column {
 		width: 100%;
 		}
-} 
-
-@media only screen and (max-width: 800px) {
-	html, body, nav, form, div, section {
-		background: #FFFFFF;
-	}
-	
 	body {
 		width: 85%;
-	}
-	
-	img {
-		background: #FFFFFF;
-	}
-}
+} 
+
+
  
  
 section {
@@ -234,7 +224,7 @@ div {
 }
 
 img {
-	background: #FFFFF0
+	background: #FFFFFF
 }
 	
 
